@@ -1,0 +1,7 @@
+Vendor ID,Vendor Name,Service Provided,InfoSec Score (25%),Privacy Score (20%),AI Gov Score (20%),BCP Score (15%),Compliance Score (10%),Incident Score (10%),Overall Weighted Score,Risk Tier,Required Governance Treatment,Review Frequency
+VND-2026-001,CloudScale Solutions Ltd.,Cloud Hosting Infrastructure (AWS/Azure Managed),92%,88%,85%,95%,90%,92%,90.0%,Low Risk,Standard due diligence & SLA monitoring & Annual SOC2 Type II audit,Annual
+VND-2026-002,FinTech Pay Gateway Services,Payment Gateway & UPI Settlement API,75%,70%,60%,80%,85%,70%,73.2%,Medium Risk,Enhanced due diligence & Bi-annual security penetration test review,Bi-annual
+VND-2026-003,SmartKYC Verification Systems,Biometric AI & Optical KYC Engine,58%,55%,48%,65%,70%,50%,56.9%,High Risk,Senior management approval required & Mandatory JIT data masking & Quarterly audit,Quarterly
+VND-2026-004,OmniChat AI Platforms,Customer Service Conversational Chatbot,78%,72%,68%,75%,80%,75%,74.7%,Medium Risk,Prompt injection testing & Monthly conversation sample audit,Bi-annual
+VND-2026-005,AnalyticsCore AI Solutions,Credit Risk & Fraud Model Engine,62%,60%,52%,70%,75%,65%,63.1%,Medium Risk,Demographic bias audit & Model explainability verification & Enhanced monitoring,Bi-annual
+VND-2026-006,OfficeCloud SaaS Corp,Employee Productivity & M365 SaaS,88%,85%,80%,90%,92%,88%,86.7%,Low Risk,Standard annual SOC2 review & Enterprise zero-data-retention policy validation,Annual

@@ -1,0 +1,2 @@
+Vendor ID,Vendor Type,Service,Risk Category,Risk Description,Likelihood,Impact,Risk Score,Risk Rating,Existing Controls,Required Action,Risk Owner,Review Frequency
+VND-YYYY-XXX,Cloud Provider | FinTech | AI Vendor | SaaS Provider,Service provided...,InfoSec | Privacy | AI Governance | Operational | Compliance,Describe third party threat or vulnerability scenario...,1-3,1-3,Score (L x I),Low | Medium | High,Current vendor mitigating controls,Recommended risk treatment action,Assigned risk owner role,Annual | Bi-annual | Quarterly

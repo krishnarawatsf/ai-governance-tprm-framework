@@ -1,0 +1,26 @@
+Question ID,Assessment Domain,Weightage,Question Text,Response Options,Required Assumed Evidence,Compliance Scored Value
+Q-SEC-01,Information Security,25%,Does your organization maintain active ISO/IEC 27001:2022 or SOC 2 Type II certifications?,Yes / No / Partial,Valid Certificate & Audit Report copy,Yes = 100% | Partial = 50% | No = 0%
+Q-SEC-02,Information Security,25%,Is all customer data encrypted at rest using AES-256 and in transit using TLS 1.3?,Yes / No,KMS architecture & TLS audit report,Yes = 100% | No = 0%
+Q-SEC-03,Information Security,25%,Do you perform annual third-party web application and infrastructure penetration testing?,Yes / No,Executive summary of recent PenTest report,Yes = 100% | No = 0%
+Q-SEC-04,Information Security,25%,Are multi-factor authentication (MFA) and Role-Based Access Control (RBAC) enforced for all employees?,Yes / No,IAM policy documentation & AD screenshot,Yes = 100% | No = 0%
+Q-SEC-05,Information Security,25%,Do you enforce automated vulnerability patching within 14 days for critical vulnerabilities?,Yes / No,Patch management policy & SLA logs,Yes = 100% | No = 0%
+Q-PRV-01,Privacy & Data Protection,20%,Does your organization comply with the Digital Personal Data Protection (DPDP) Act 2023 and GDPR?,Yes / No / Partial,Data Privacy Impact Assessment (DPIA),Yes = 100% | Partial = 50% | No = 0%
+Q-PRV-02,Privacy & Data Protection,20%,Is customer PII segregated and isolated in dedicated single-tenant or logically separated cloud storage?,Yes / No,Cloud data architecture diagram,Yes = 100% | No = 0%
+Q-PRV-03,Privacy & Data Protection,20%,Do you guarantee zero-data-retention for customer inputs used in AI model inference?,Yes / No,Data retention policy & Enterprise contract clause,Yes = 100% | No = 0%
+Q-PRV-04,Privacy & Data Protection,20%,Are automated data masking or pseudonymization techniques applied prior to processing sensitive telemetry?,Yes / No,Data masking workflow documentation,Yes = 100% | No = 0%
+Q-AIG-01,AI Governance,20%,Does your organization maintain a documented AI Ethics & Model Governance Framework?,Yes / No,AI Governance Policy document,Yes = 100% | No = 0%
+Q-AIG-02,AI Governance,20%,Do you perform pre-deployment demographic bias and disparate impact testing for decision-making AI models?,Yes / No,Bias assessment audit report,Yes = 100% | No = 0%
+Q-AIG-03,AI Governance,20%,Can your AI models generate local or global feature explainability (e.g. SHAP/LIME metrics) for auditability?,Yes / No,Explainability report sample,Yes = 100% | No = 0%
+Q-AIG-04,AI Governance,20%,Do you implement technical guardrails against prompt injection, hallucination, and data poisoning?,Yes / No,LLM Guardrail configuration docs,Yes = 100% | No = 0%
+Q-AIG-05,AI Governance,20%,Is customer data strictly excluded from being used to train or fine-tune public foundation models?,Yes / No,Contractual AI terms of service clause,Yes = 100% | No = 0%
+Q-BCP-01,Business Continuity,15%,Do you maintain a documented Business Continuity Plan (BCP) and Disaster Recovery (DR) plan?,Yes / No,BCP/DR policy summary document,Yes = 100% | No = 0%
+Q-BCP-02,Business Continuity,15%,What is your target Recovery Time Objective (RTO) and Recovery Point Objective (RPO)?,RTO < 2h / RTO < 4h / RTO > 4h,DR test report & RTO/RPO SLA document,<2h = 100% | <4h = 75% | >4h = 0%
+Q-BCP-03,Business Continuity,15%,Do you perform bi-annual multi-region cloud disaster recovery failover simulations?,Yes / No,Recent DR exercise execution report,Yes = 100% | No = 0%
+Q-CMP-01,Regulatory Compliance,10%,Are your operations compliant with RBI Master Directions on IT & Cybersecurity for Financial Entities?,Yes / No / NA,RBI compliance mapping document,Yes = 100% | NA = 100% | No = 0%
+Q-CMP-02,Regulatory Compliance,10%,Do you guarantee that all customer financial data remains hosted strictly within Indian geographic boundaries?,Yes / No,Data residency architecture confirmation,Yes = 100% | No = 0%
+Q-CMP-03,Regulatory Compliance,10%,Are fourth-party subcontractors subjected to formal background verification and security due diligence?,Yes / No,Subcontractor management policy,Yes = 100% | No = 0%
+Q-INC-01,Incident Management,10%,Do you guarantee 24/7 continuous security event monitoring and SOC capabilities?,Yes / No,SOC operational charter & SLA document,Yes = 100% | No = 0%
+Q-INC-02,Incident Management,10%,Will your organization notify SecureBank of any security incident or breach within 2 hours of detection?,Yes / No,Incident response SLA agreement,Yes = 100% | No = 0%
+Q-INC-03,Incident Management,10%,Do you conduct annual table-top ransomware and supply chain incident simulations?,Yes / No,Table-top exercise execution summary,Yes = 100% | No = 0%
+Q-INC-04,Incident Management,10%,Do you maintain forensic image capture capabilities for cloud resources during breach investigations?,Yes / No,Forensic IR capability statement,Yes = 100% | No = 0%
+Q-INC-05,Incident Management,10%,Are incident response playbooks reviewed and updated semi-annually?,Yes / No,IR playbook review logs,Yes = 100% | No = 0%
