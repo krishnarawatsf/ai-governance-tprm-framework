@@ -1,116 +1,186 @@
-# Enterprise AI Governance & Third-Party Risk Management (TPRM) Framework
-**Organization:** SecureBank Digital Services Pvt. Ltd. (Fictional Entity)  
-**Domain:** BFSI (Banking, Financial Services, and Insurance) — India  
-**Engagement Type:** AI Governance & Cyber Risk Consulting Portfolio Project  
+# 🤖 Enterprise AI Governance & Third-Party Risk Management (TPRM) Framework
+
+![Standard](https://img.shields.io/badge/Framework-ISO%2FIEC%2042001%20%7C%20NIST%20AI%20RMF-purple?style=for-the-badge&logo=openai)
+![Industry](https://img.shields.io/badge/Industry-BFSI%20Digital%20Banking-0052CC?style=for-the-badge&logo=bank)
+![AI Risk Tiers](https://img.shields.io/badge/AI%20Tiers-3%20High%20Risk%20%7C%202%20Medium%20%7C%201%20Low-red?style=for-the-badge)
+![Vendor Risk](https://img.shields.io/badge/TPRM-6%20Suppliers%20Evaluated%20%7C%201%20High%20Risk-orange?style=for-the-badge&logo=securityscorecard)
+![Regulatory](https://img.shields.io/badge/Compliance-RBI%20AI%20Directions%20%7C%20DPDP%20Act-green?style=for-the-badge)
+
+**Client:** SecureBank Digital Services Pvt. Ltd. (Hypothetical Indian BFSI Entity)  
+**Scope:** AI Systems Lifecycle, Algorithmic Risk Classification, Weighted Vendor Scoring & Third-Party Oversight  
+**Target Roles:** Cybersecurity GRC Consultant, AI Risk & Governance Specialist, TPRM Analyst  
 
 ---
 
 > [!NOTE]  
-> **Disclaimer:** SecureBank Digital Services Pvt. Ltd. is a hypothetical organization created for cybersecurity & AI risk consulting portfolio purposes. All use cases, vendor assessments, scoring metrics, and governance rules represent simulated consulting assumptions created for portfolio demonstration.
+> **Portfolio Disclaimer:** SecureBank Digital Services Pvt. Ltd. is a fictional entity created for cybersecurity & AI risk consulting portfolio demonstration. All use cases, vendor assessments, scoring metrics, and governance rules represent hypothetical consulting assumptions created to demonstrate real-world GRC thought leadership.
 
 ---
 
-## Executive Project Overview
-
-As **SecureBank Digital Services Pvt. Ltd.** accelerates its digital transformation, the organization is deploying artificial intelligence (AI) across key financial workflows—ranging from customer-facing conversational chatbots to automated credit scoring and biometric KYC verification. Simultaneously, SecureBank relies heavily on third-party cloud infrastructure, payment gateways, and specialized AI SaaS vendors.
-
-This repository establishes a comprehensive **Enterprise AI Governance & Third-Party Risk Management (TPRM) Framework** designed to ensure responsible AI deployment, regulatory compliance (RBI AI & Cyber Directions, DPDP Act 2023), robust algorithmic risk classification, weighted vendor scoring, and structured escalation pathways.
-
----
-
-## Workspace Structure
-
-```
-project-2-ai-governance-tprm/
-├── README.md                          # Project overview and navigation guide
-├── docs/
-│   ├── executive-summary.md           # Board-level executive summary & governance metrics
-│   ├── ai-governance-framework.md     # AI risk classification, tiers & 10-stage lifecycle
-│   ├── tprm-framework.md              # Vendor scoring methodology (6 weighted domains) & 25 Qs
-│   └── management-recommendations.md  # Prioritized AI & TPRM risk remediation roadmap
-├── data/
-│   ├── ai-use-cases.csv               # 6 BFSI AI use cases mapped to risk tiers & approvals
-│   ├── ai-risk-register.csv           # 12 identified AI risks across 11 risk categories
-│   ├── vendor-assessment.csv          # 6 technology/AI vendor evaluations with weighted scores
-│   └── vendor-risk-register.csv       # 10 third-party supplier risk entries
-├── dashboard/
-│   └── index.html                     # Interactive Executive AI & TPRM Risk Dashboard
-├── presentation/
-│   └── presentation-outline.md        # 10-slide executive presentation Deck Outline
-└── templates/
-    ├── ai-risk-assessment-template.csv # Reusable AI use case risk assessment schema
-    ├── vendor-questionnaire.csv       # 25-question vendor assessment questionnaire
-    └── vendor-risk-template.csv       # Reusable vendor risk register schema
-```
+## 📑 Table of Contents
+- [Executive Overview](#-executive-overview)
+- [AI Threat Architecture & Attack Vectors](#-ai-threat-architecture--attack-vectors)
+- [AI Risk Classification Tiers & Governance Rules](#-ai-risk-classification-tiers--governance-rules)
+- [Weighted TPRM Vendor Scoring Model](#-weighted-tprm-vendor-scoring-model)
+- [Vendor Risk Scorecard Results](#-vendor-risk-scorecard-results)
+- [10-Stage AI Lifecycle Stage-Gates](#-10-stage-ai-lifecycle-stage-gates)
+- [Interactive AI & TPRM Executive Dashboard](#-interactive-ai--tprm-executive-dashboard)
+- [Repository Structure & Deliverables](#-repository-structure--deliverables)
 
 ---
 
-## Framework Architecture & Highlights
+## 👔 Executive Overview
 
-### 1. AI Risk Classification Tiers
+As **SecureBank Digital Services Pvt. Ltd.** accelerates its digital banking operations, the organization is deploying Artificial Intelligence (AI) and Machine Learning (ML) across six key financial workflows: **Customer Support Chatbots, Transaction Fraud Detection, Algorithmic Credit Risk Assessment, Document OCR/NLP Processing, Employee HR Assistants, and Biometric Customer Onboarding (KYC)**.
+
+While AI adoption enhances operational velocity, it introduces non-traditional cyber threat vectors—including **adversarial prompt injection, algorithmic bias, black-box explainability failures, model concept drift, customer PII data leakage via cloud LLM APIs, and third-party AI supply chain dependencies**.
+
+This repository delivers an **Enterprise AI Governance & Third-Party Risk Management (TPRM) Framework** designed to ensure responsible, secure, and compliant AI deployment in strict alignment with **RBI Guidelines**, **ISO/IEC 42001 (AI Management System)**, **NIST AI RMF 1.0**, and India's **Digital Personal Data Protection (DPDP) Act 2023**.
+
+---
+
+## ⚡ AI Threat Architecture & Attack Vectors
+
+```mermaid
+graph TD
+    subgraph External Threats & Adversaries
+        Adversary["🥷 Cyber Attacker / Prompt Injector"]
+        Spoofer["👤 Biometric Deepfake Attacker"]
+        RogueVendor["⚠️ Uncertificated 3rd-Party AI Vendor"]
+    end
+
+    subgraph AI Attack Surface & Applications
+        Chatbot["🤖 Customer Service Chatbot\n(LLM API Endpoint)"]
+        BiometricKYC["📷 Biometric AI KYC Engine\n(Facial Liveness Verification)"]
+        CreditModel["📊 ML Credit Scoring Engine\n(Automated Loan Approval)"]
+        EmployeeAI["💼 Internal Productivity Assistant\n(Enterprise SaaS Tool)"]
+    end
+
+    subgraph Cyber & Governance Risk Exposures
+        PromptInj["🚨 Direct / Indirect Prompt Injection"]
+        BiometricBypass["🚨 Active Deepfake Spoofing Bypass"]
+        AlgoBias["🚨 Demographic Parity Bias & Black Box"]
+        PIILeak["🚨 Customer PII Leakage via LLM Training"]
+        VendorBreach["🚨 Unencrypted Cloud Biometric Storage"]
+    end
+
+    Adversary -->|Adversarial Prompts| Chatbot
+    Spoofer -->|Synthetic Video Inject| BiometricKYC
+    RogueVendor -->|Data Policy Drift| VendorBreach
+
+    Chatbot --> PromptInj
+    BiometricKYC --> BiometricBypass
+    CreditModel --> AlgoBias
+    EmployeeAI --> PIILeak
+    BiometricKYC --> VendorBreach
+
+    style PromptInj fill:#b91c1c,color:#fff
+    style BiometricBypass fill:#b91c1c,color:#fff
+    style VendorBreach fill:#b91c1c,color:#fff
+    style AlgoBias fill:#c2410c,color:#fff
+    style PIILeak fill:#c2410c,color:#fff
+```
+
+---
+
+## 🎯 AI Risk Classification Tiers & Governance Rules
+
+SecureBank categorizes AI initiatives into three distinct risk tiers, each enforcing technical controls and multi-tier approval authorities:
 
 ```
-+--------------------------------------------------------------------------------------------------+
-|                                    AI RISK CLASSIFICATION TIERS                                  |
-+--------------------------------------------------------------------------------------------------+
-|  TIER 1: LOW RISK       | Internal productivity tools (e.g. Employee HR Assistant)               |
-|                         | Governance: Business Owner approval, zero-data-retention API check.      |
-+-------------------------+------------------------------------------------------------------------+
-|  TIER 2: MEDIUM RISK    | Customer-facing tools (e.g. Chatbot, Document OCR/NLP)                 |
-|                         | Governance: Business Owner + Risk Lead approval, prompt guardrails.    |
-+-------------------------+------------------------------------------------------------------------+
-|  TIER 3: HIGH RISK      | Financial decisioning (e.g. Credit Scoring, Fraud Detection, AI KYC)   |
-|                         | Governance: AI Governance Committee / Board approval, bias audit, SHAP.|
-+--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+|                                    AI RISK CLASSIFICATION TIERS                                        |
++--------------------------------------------------------------------------------------------------------+
+|  TIER 3: HIGH RISK      | 3 Initiatives (50%) | Credit Risk Scoring, Fraud Detection, Biometric AI KYC  |
+|                         | Governance: Board Risk Committee & AI Governance Committee approval.             |
+|                         | Technical Controls: Mandatory demographic bias audit, SHAP, active 3D liveness.|
++-------------------------+------------------------------------------------------------------------------+
+|  TIER 2: MEDIUM RISK    | 2 Initiatives (33%) | Customer Support Chatbot, Document Processing (OCR)      |
+|                         | Governance: Business AI Owner & CISO / Risk Lead approval.                    |
+|                         | Technical Controls: NeMo prompt injection guardrails, OCR thresholding (>95%).|
++-------------------------+------------------------------------------------------------------------------+
+|  TIER 1: LOW RISK       | 1 Initiative (17%)  | Employee HR Productivity Assistant                       |
+|                         | Governance: Business AI Owner & HR Lead sign-off.                             |
+|                         | Technical Controls: Zero-data-retention enterprise API endpoints, DLP rules.   |
++--------------------------------------------------------------------------------------------------------+
 ```
 
-### 2. Weighted Vendor Risk Scoring Methodology
+---
 
-Vendor security & governance posture is calculated across **six weighted operational domains**:
+## 📐 Weighted TPRM Vendor Scoring Model
+
+Third-party vendor risk posture is calculated across **six weighted operational domains**:
 
 $$\text{Overall Vendor Score} = (0.25 \times \text{InfoSec}) + (0.20 \times \text{Privacy}) + (0.20 \times \text{AI Governance}) + (0.15 \times \text{BCP}) + (0.10 \times \text{Compliance}) + (0.10 \times \text{Incident Mgmt})$$
 
-- **Low Risk (Score ≥ 80%):** Standard annual review.
-- **Medium Risk (Score 60–79%):** Enhanced due diligence & bi-annual monitoring.
-- **High Risk (Score < 60%):** Senior management sign-off, quarterly re-assessments & mandatory risk treatment.
+- 🟢 **Low Risk (Score ≥ 80%):** Standard due diligence & annual SOC 2 review.
+- 🟡 **Medium Risk (Score 60%–79%):** Enhanced due diligence & bi-annual penetration test audit.
+- 🔴 **High Risk (Score < 60%):** Senior Management sign-off, quarterly re-assessments & conditional onboarding freeze.
 
 ---
 
-## Core Audit Statistics & Portfolio Metrics
+## 📊 Vendor Risk Scorecard Results
 
-| Metric Category | Count / Rating | Key Breakdown |
-| :--- | :--- | :--- |
-| **AI Use Cases Evaluated** | **6 Key BFSI Use Cases** | 3 High Risk (Tier 3), 2 Medium Risk (Tier 2), 1 Low Risk (Tier 1) |
-| **AI Risks Registered** | **12 Detailed Risks** | Privacy, Cybersecurity, Model Drift, Bias, Transparency, Data Quality |
-| **Vendors Assessed** | **6 Key Suppliers** | 2 Low Risk, 3 Medium Risk, 1 High Risk (`SmartKYC Verification`) |
-| **Vendor Risks Registered** | **10 Vendor Risks** | Unencrypted biometrics, missing SOC2, unannounced API downtime |
-| **Governance Approval** | **Multi-Tier Authority** | Business Owner → CISO/Risk → AI Governance Committee → Board |
+Comprehensive security and governance evaluation of SecureBank's six core technology suppliers:
 
----
-
-## How to Access the Interactive Executive Dashboard
-
-Open the self-contained HTML dashboard in any web browser:
-```bash
-# Path to dashboard
-project-2-ai-governance-tprm/dashboard/index.html
 ```
-Features include:
-- Executive KPI summary cards for AI use cases, vendor risk distributions, and open items.
-- Interactive Chart.js graphs (AI Risk Tier Breakdown, Vendor Risk Ratings, AI Risk Category Distribution).
-- Filter dropdowns for AI Risk Tier, Risk Rating, Vendor Type, Governance Status, and Search query.
-- Tabbed data view toggling between AI Use Cases, AI Risk Register, Vendor Scoring, and Vendor Risk Register.
+========================================================================================================
+Vendor ID | Vendor Name                   | Service Provided              | Overall Score | Risk Rating
+--------------------------------------------------------------------------------------------------------
+VND-001   | CloudScale Solutions Ltd.     | Cloud Hosting Infrastructure  |     90.0%     | 🟢 Low Risk
+VND-006   | OfficeCloud SaaS Corp         | Employee Productivity SaaS    |     86.7%     | 🟢 Low Risk
+VND-004   | OmniChat AI Platforms         | Customer Support Chatbot      |     74.7%     | 🟡 Medium Risk
+VND-002   | FinTech Pay Gateway Services | Payment Gateway & UPI API     |     73.2%     | 🟡 Medium Risk
+VND-005   | AnalyticsCore AI Solutions   | Credit Risk & Fraud Engine    |     63.1%     | 🟡 Medium Risk
+VND-003   | SmartKYC Verification Systems | Biometric AI & Optical KYC    |     56.9%     | 🔴 HIGH RISK
+========================================================================================================
+```
+
+### Critical Finding: High-Risk Vendor (`SmartKYC Verification Systems`)
+- **Overall Score:** **56.9%** (Fails mandatory 60% threshold).
+- **Core Deficiencies:** Unencrypted biometric audit logs in cloud storage, missing SOC 2 Type II certification, unvetted 4th-party offshore subcontractors, lack of ISO 30107-3 deepfake liveness testing.
+- **Required Treatment:** Freeze new customer onboarding via SmartKYC until vendor implements AES-256 cloud encryption and completes an independent SOC 2 Type II audit within 60 days.
 
 ---
 
-## Deliverable References
+## 🔄 10-Stage AI Lifecycle Stage-Gates
 
-- [`docs/executive-summary.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/executive-summary.md)
-- [`docs/ai-governance-framework.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/ai-governance-framework.md)
-- [`docs/tprm-framework.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/tprm-framework.md)
-- [`docs/management-recommendations.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/management-recommendations.md)
-- [`data/ai-use-cases.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/ai-use-cases.csv)
-- [`data/ai-risk-register.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/ai-risk-register.csv)
-- [`data/vendor-assessment.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/vendor-assessment.csv)
-- [`data/vendor-risk-register.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/vendor-risk-register.csv)
-- [`dashboard/index.html`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/dashboard/index.html)
+```
+[1] Use Case Identification  -->  [2] Risk Classification  -->  [3] Data Assessment
+                                                                       |
+[6] Governance Approval      <--  [5] Vendor/Model Review   <--  [4] Security Assessment
+         |
+         v
+[7] Staging & Implementation -->  [8] Continuous Monitoring -->  [9] Periodic Review  --> [10] Retirement
+```
+
+Every AI initiative must pass mandatory stage-gate approvals in Jira Service Management before code deployment.
+
+---
+
+## 💻 Interactive AI & TPRM Executive Dashboard
+
+The repository includes a fully self-contained HTML executive dashboard designed for board reporting:
+
+- **Location:** [`dashboard/index.html`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/dashboard/index.html)
+- **Features:** 
+  - Executive KPI summary cards (AI Tiers, Vendor Risk Distribution, High Risk Count).
+  - Interactive Chart.js analytics (AI Tier Donut, Vendor Rating Bar, AI Category Breakdown).
+  - Multi-tab navigation (AI Use Cases, AI Risk Register, Vendor Scoring, Vendor Risk Register).
+  - Responsive dark-slate BFSI consulting UI aesthetics.
+
+---
+
+## 📁 Repository Structure & Deliverables
+
+- 📄 [`docs/executive-summary.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/executive-summary.md) — Executive C-level briefing.
+- 📄 [`docs/ai-governance-framework.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/ai-governance-framework.md) — Full AI risk classification & 10-stage lifecycle guide.
+- 📄 [`docs/tprm-framework.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/tprm-framework.md) — 6-domain weighted vendor scoring methodology.
+- 📄 [`docs/management-recommendations.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/docs/management-recommendations.md) — Prioritized 180-day remediation roadmap.
+- 📊 [`data/ai-use-cases.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/ai-use-cases.csv) — 6 BFSI AI use cases mapped to risk tiers.
+- 📊 [`data/ai-risk-register.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/ai-risk-register.csv) — 12 identified AI risks across 11 categories.
+- 📊 [`data/vendor-assessment.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/vendor-assessment.csv) — 6 evaluated technology/AI suppliers.
+- 📊 [`data/vendor-risk-register.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/data/vendor-risk-register.csv) — 10 third-party supplier risks.
+- 📊 [`templates/vendor-questionnaire.csv`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/templates/vendor-questionnaire.csv) — 25-question vendor assessment questionnaire.
+- 🖥️ [`dashboard/index.html`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/dashboard/index.html) — Interactive executive HTML dashboard.
+- 🎤 [`presentation/presentation-outline.md`](file:///Users/krishnarawat/Desktop/GRC_1/project-2-ai-governance-tprm/presentation/presentation-outline.md) — 10-slide executive presentation outline.
